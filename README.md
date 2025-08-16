@@ -14,8 +14,18 @@ O seu programa deverá cálcular corretamente os valores dos métodos da classe 
 2. O método ObterQuantidadeHospedes da classe Reserva deverá retornar a quantidade total de hóspedes, enquanto que o método CalcularValorDiaria deverá retornar o valor da diária (Dias reservados x valor da diária).
 3. Caso seja feita uma reserva igual ou maior que 10 dias, deverá ser concedido um desconto de 10% no valor da diária.
 
-
 ![Diagrama de classe estacionamento](diagrama_classe_hotel.png)
 
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+---
+
+## O que já foi implementado
+
+- **Validação da capacidade da suíte:** O método `CadastrarHospedes` verifica se a quantidade de hóspedes não excede a capacidade da suíte, lançando uma exceção caso contrário.
+- **Cadastro da suíte:** O método `CadastrarSuite` permite associar uma suíte à reserva.
+- **Quantidade de hóspedes:** O método `ObterQuantidadeHospedes` retorna corretamente o número de hóspedes cadastrados.
+- **Cálculo do valor da diária:** O método `CalcularValorDiaria` calcula o valor total da reserva multiplicando os dias reservados pelo valor da diária da suíte e aplica um desconto de 10% automaticamente para reservas de 10 dias ou mais.
+
+Essas implementações garantem que as principais regras de negócio do desafio sejam atendidas, tornando o sistema funcional até o ponto de permitir o cadastro de hóspedes e suítes, bem como o cálculo do valor da diária com desconto apropriado.
